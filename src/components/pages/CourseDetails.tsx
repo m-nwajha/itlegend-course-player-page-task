@@ -1,7 +1,10 @@
 "use client";
 
+import { Container } from "../atoms/Container";
+import { Grid } from "../atoms/Grid";
 import { useBreadcrumb } from "../Contexts/BreadcrumbContext";
 import { useEffect } from "react";
+import RightSideCourse from "../organisms/RightSideCourse";
 
 const CourseDetails = () => {
   const { setBreadcrumb } = useBreadcrumb();
@@ -15,7 +18,16 @@ const CourseDetails = () => {
       ],
     });
   }, [setBreadcrumb]);
-  return <h1>Course Details</h1>;
+  return (
+    <Container>
+      <Grid lg={3} md={1} sm={1}>
+        <div className="lg:col-span-2 h-[200vh]">ghfhgf</div>
+        <div className="lg:col-span-1">
+          <RightSideCourse />
+        </div>
+      </Grid>
+    </Container>
+  );
 };
 
 export default CourseDetails;

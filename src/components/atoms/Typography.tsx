@@ -1,6 +1,6 @@
 "use client";
 import { CN } from "@/utils/className";
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import { ReactNode } from "react";
 
 export type TypographyProps = {
@@ -18,6 +18,7 @@ export type TypographyProps = {
     | "span1"
     | "span2";
   className?: string;
+  style?: CSSProperties;
 };
 const TYPOGRAPHY_SIZE = {
   h1: "text-[2.3rem]",
@@ -37,10 +38,11 @@ export const Typography: FC<TypographyProps> = ({
   variant = "p",
   size = "body1",
   className,
+  style
 }) => {
   const CreateTypography = variant;
   return (
-    <CreateTypography className={CN(TYPOGRAPHY_SIZE[size], className)}>
+    <CreateTypography className={CN(TYPOGRAPHY_SIZE[size], className)} style={style}>
       {children}
     </CreateTypography>
   );

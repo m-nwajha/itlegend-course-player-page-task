@@ -15,6 +15,8 @@ export const Box: FC<BoxProps> = ({
   alignItems = "start",
   gap = 1,
   className,
+  style,
+
 }) => {
   return (
     <div
@@ -27,6 +29,7 @@ export const Box: FC<BoxProps> = ({
         display === "flex" ? GAP[gap] : "",
         className,
       )}
+      style={style}
     >
       {children}
     </div>
