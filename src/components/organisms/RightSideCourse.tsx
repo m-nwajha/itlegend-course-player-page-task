@@ -4,6 +4,7 @@ import { Box } from "../atoms/Box";
 import TimelineWidget from "../molecules/TimelineWidget";
 import WeekCard from "../molecules/WeekCard";
 import { COURSE_WEEKS } from "@/constants/courseWeeks";
+import { WeekCardItemProps } from "../atoms/WeekCardItem";
 
 const RightSideCourse = () => {
   const [weeks, setWeeks] = useState(COURSE_WEEKS);
@@ -23,7 +24,7 @@ const RightSideCourse = () => {
           key={weekItem.id}
           title={weekItem.title}
           description={weekItem.description}
-          items={weekItem.items}
+          items={weekItem.items as WeekCardItemProps[]}
           isExpand={weekItem.isExpanded}
           expandOnClick={() => handleExpand(weekItem.id)}
         />

@@ -1,4 +1,12 @@
-export const COURSE_WEEKS = [
+import { WeekCardItemProps } from "@/components/atoms/WeekCardItem";
+
+export const COURSE_WEEKS: {
+  id: number;
+  isExpanded: boolean;
+  title: string;
+  description: string;
+  items: WeekCardItemProps[];
+}[] = [
   {
     id: 1,
     isExpanded: true,
@@ -12,14 +20,47 @@ export const COURSE_WEEKS = [
         isLocked: true,
       },
       {
-        title: "Course Overview",
-        href: "/course/1/lesson/2",
-        isLocked: true,
+        title: "Overview PDF ",
+        filePDF: "/assets/pdfs/Mohamed-ALNawjha.pdf",
+        isPopup: true,
+        typePopup: "pdf",
       },
       {
         title: "Course Overview",
-        href: "/course/1/lesson/3",
-        qouestionCount: 0,
+        isPopup: true,
+        typePopup: "exam",
+        questions: [
+          {
+            id: 1,
+            text: "Among the following states of India, which one has the oldest rock formations in the country?",
+            options: ["Assam", "Bihar", "Karnataka", "Uttar Pradesh"],
+          },
+          {
+            id: 2,
+            text: "What is the capital of France?",
+            options: ["Berlin", "Madrid", "Paris", "Rome"],
+          },
+          {
+            id: 3,
+            text: "Which language runs in a web browser?",
+            options: ["Java", "C", "Python", "JavaScript"],
+          },
+          {
+            id: 4,
+            text: "What does CSS stand for?",
+            options: [
+              "Cascading Style Sheets",
+              "Computer Style Sheets",
+              "Creative Style Sheets",
+              "Colorful Style Sheets",
+            ],
+          },
+          {
+            id: 5,
+            text: "What year was React first released?",
+            options: ["2011", "2013", "2015", "2017"],
+          },
+        ],
         minuteCount: 10,
       },
       {
@@ -58,9 +99,36 @@ export const COURSE_WEEKS = [
       },
       {
         title: "Return Values From Functions",
-        href: "/course/1/lesson/9",
-        qouestionCount: 2,
-        minuteCount: 15,
+        isPopup: true,
+        typePopup: "exam",
+        questions: [
+          {
+            id: 1,
+            text: "Among the following states of India, which one has the oldest rock formations in the country?",
+            options: ["Assam", "Bihar", "Karnataka", "Uttar Pradesh"],
+          },
+          {
+            id: 2,
+            text: "What is the capital of France?",
+            options: ["Berlin", "Madrid", "Paris", "Rome"],
+          },
+          {
+            id: 3,
+            text: "Which language runs in a web browser?",
+            options: ["Java", "C", "Python", "JavaScript"],
+          },
+          {
+            id: 4,
+            text: "What does CSS stand for?",
+            options: [
+              "Cascading Style Sheets",
+              "Computer Style Sheets",
+              "Creative Style Sheets",
+              "Colorful Style Sheets",
+            ],
+          }
+        ],
+        minuteCount: 5,
       },
       {
         title: "Global Variable and Scope",
@@ -98,9 +166,41 @@ export const COURSE_WEEKS = [
       },
       {
         title: "Return Values From Functions",
-        href: "/course/1/lesson/9",
-        qouestionCount: 2,
-        minuteCount: 15,
+        isPopup: true,
+        typePopup: "exam",
+        questions: [
+          {
+            id: 1,
+            text: "Among the following states of India, which one has the oldest rock formations in the country?",
+            options: ["Assam", "Bihar", "Karnataka", "Uttar Pradesh"],
+          },
+          {
+            id: 2,
+            text: "What is the capital of France?",
+            options: ["Berlin", "Madrid", "Paris", "Rome"],
+          },
+          {
+            id: 3,
+            text: "Which language runs in a web browser?",
+            options: ["Java", "C", "Python", "JavaScript"],
+          },
+          {
+            id: 4,
+            text: "What does CSS stand for?",
+            options: [
+              "Cascading Style Sheets",
+              "Computer Style Sheets",
+              "Creative Style Sheets",
+              "Colorful Style Sheets",
+            ],
+          },
+          {
+            id: 5,
+            text: "What year was React first released?",
+            options: ["2011", "2013", "2015", "2017"],
+          },
+        ],
+        minuteCount: 7,
       },
       {
         title: "Global Variable and Scope",
