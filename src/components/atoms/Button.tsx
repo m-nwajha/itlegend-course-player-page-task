@@ -24,7 +24,7 @@ const Button: FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={CN(
-        "flex items-center justify-center h-10 px-5 uppercase rounded-[5px] text-[1rem] transition-colors",
+        "flex items-center justify-center h-13 px-5  uppercase rounded-[5px] text-[1rem] transition-colors",
         {
           "bg-[#41b69d] text-white hover:bg-[#319e87] disabled:bg-gray-300 disabled:cursor-not-allowed cursor-pointer":
             variant === "primary",
