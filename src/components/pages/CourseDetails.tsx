@@ -8,18 +8,18 @@ import RightSideCourse from "../organisms/RightSideCourse";
 import LeftStideCourse from "../organisms/LeftStideCourse";
 import CommentsSection from "../molecules/CommentsSection";
 
-const CourseDetails = () => {
+const CourseDetails = ({ courseId }: { courseId: string }) => {
   const { setBreadcrumb } = useBreadcrumb();
   useEffect(() => {
     setBreadcrumb({
-      title: "Starting SEO as your Home",
+      title: `Starting SEO as your Home #${courseId}`,
       history: [
         { name: "Home", url: "/" },
-        { name: "Courses", url: "/courses" },
-        { name: "Course Details" },
+        { name: "Courses", url: "/" },
+        { name: `Course Details #${courseId}` },
       ],
     });
-  }, [setBreadcrumb]);
+  }, [setBreadcrumb, courseId]);
   return (
     <Container>
       <Grid lg={3} md={1} sm={1}>

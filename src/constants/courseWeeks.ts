@@ -16,7 +16,7 @@ export const COURSE_WEEKS: {
     items: [
       {
         title: "Introduction",
-        href: "/course/1/lesson/1",
+        href: "/course/1",
         isLocked: true,
       },
       {
@@ -65,17 +65,17 @@ export const COURSE_WEEKS: {
       },
       {
         title: "Course Exercise / Reference Files",
-        href: "/course/1/lesson/4",
+        href: "/course/1",
         isLocked: true,
       },
       {
         title: "Code Editor Installation (Optional if you have one)",
-        href: "/course/1/lesson/5",
+        href: "/course/5",
         isLocked: true,
       },
       {
         title: "Embedding PHP in HTML",
-        href: "/course/1/lesson/6",
+        href: "/course/2",
         isLocked: true,
       },
     ],
@@ -89,12 +89,12 @@ export const COURSE_WEEKS: {
     items: [
       {
         title: "Defining Functions",
-        href: "/course/1/lesson/7",
+        href: "/course/5",
         isLocked: true,
       },
       {
         title: "Function Parameters",
-        href: "/course/1/lesson/8",
+        href: "/course/3",
         isLocked: true,
       },
       {
@@ -132,17 +132,17 @@ export const COURSE_WEEKS: {
       },
       {
         title: "Global Variable and Scope",
-        href: "/course/1/lesson/10",
+        href: "/course/5",
         isLocked: true,
       },
       {
         title: "Newer Way of creating a Constant",
-        href: "/course/1/lesson/11",
+        href: "/course/4",
         isLocked: true,
       },
       {
         title: "Constants",
-        href: "/course/1/lesson/12",
+        href: "/course/3",
         isLocked: true,
       },
     ],
@@ -156,12 +156,12 @@ export const COURSE_WEEKS: {
     items: [
       {
         title: "Defining Functions",
-        href: "/course/1/lesson/13",
+        href: "/course/4",
         isLocked: true,
       },
       {
         title: "Function Parameters",
-        href: "/course/1/lesson/14",
+        href: "/course/5",
         isLocked: true,
       },
       {
@@ -204,17 +204,17 @@ export const COURSE_WEEKS: {
       },
       {
         title: "Global Variable and Scope",
-        href: "/course/1/lesson/10",
+        href: "/course/1",
         isLocked: true,
       },
       {
         title: "Newer Way of creating a Constant",
-        href: "/course/1/lesson/11",
+        href: "/course/2",
         isLocked: true,
       },
       {
         title: "Constants",
-        href: "/course/1/lesson/12",
+        href: "/course/3",
         isLocked: true,
       },
     ],
