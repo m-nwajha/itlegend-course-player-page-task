@@ -5,6 +5,7 @@ import TimelineWidget from "../molecules/TimelineWidget";
 import WeekCard from "../molecules/WeekCard";
 import { COURSE_WEEKS } from "@/constants/courseWeeks";
 import { WeekCardItemProps } from "../atoms/WeekCardItem";
+import { userProgressMock } from "@/mocks/progress";
 
 const RightSideCourse = () => {
   const [weeks, setWeeks] = useState(COURSE_WEEKS);
@@ -17,19 +18,26 @@ const RightSideCourse = () => {
     );
   };
   return (
-    <Box display="flex" direction="col" gap={10} className="w-full p-1 lg:p-5">
-      <TimelineWidget progress={50} />
-      {weeks.map((weekItem) => (
-        <WeekCard
-          key={weekItem.id}
-          title={weekItem.title}
-          description={weekItem.description}
-          items={weekItem.items as WeekCardItemProps[]}
-          isExpand={weekItem.isExpanded}
-          expandOnClick={() => handleExpand(weekItem.id)}
-        />
-      ))}
-    </Box>
+    <div id="curriculum">
+      <Box
+        display="flex"
+        direction="col"
+        gap={10}
+        className="w-full p-1 lg:p-5"
+      >
+        <TimelineWidget progress={userProgressMock} />
+        {weeks.map((weekItem) => (
+          <WeekCard
+            key={weekItem.id}
+            title={weekItem.title}
+            description={weekItem.description}
+            items={weekItem.items as WeekCardItemProps[]}
+            isExpand={weekItem.isExpanded}
+            expandOnClick={() => handleExpand(weekItem.id)}
+          />
+        ))}
+      </Box>
+    </div>
   );
 };
 

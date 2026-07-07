@@ -11,3 +11,15 @@
 body {
   font-family: var(--font-fredoka), sans-serif;
 }
+
+.coustm__scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+.coustm__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.coustm__scroll::-webkit-scrollbar-thumb {
+  background: #319e87;
+  border-radius: 3px;
+}

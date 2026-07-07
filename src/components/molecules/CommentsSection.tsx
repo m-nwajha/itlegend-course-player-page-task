@@ -47,7 +47,7 @@ const CommentsSection = () => {
   };
 
   return (
-    <div id="comments" className="w-full">
+    <div id="comments" className="w-full p-1 lg:p-5">
       <Box display="flex" direction="col" gap={7} className="px-4 py-6 w-full">
         <Typography className="text-black font-[500]" size="h3" variant="h5">
           Comments
