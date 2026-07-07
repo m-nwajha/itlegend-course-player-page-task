@@ -39,8 +39,8 @@ const LeaderboardPopup = ({ open, onClose }: LeaderboardPopupProps) => {
               message: getMessage(userProgressMock),
             }}
           />
-          {MOCK_LEADERBOARD.map((entry) => (
-            <LeaderboardItem key={entry.percentage} entry={entry} />
+          {MOCK_LEADERBOARD.map((entry , index) => (
+            <LeaderboardItem key={entry.percentage + index} entry={entry} />
           ))}
         </Box>
       </Box>

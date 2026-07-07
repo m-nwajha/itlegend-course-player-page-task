@@ -14,7 +14,7 @@ export const MOCK_LEADERBOARD: LeaderboardEntry[] = [
     message: { ...getMessage(30) },
   },
   {
-    percentage: 70,
+    percentage: 50,
     name: "Mostafa Hassan",
     message: { ...getMessage(50) },
   },

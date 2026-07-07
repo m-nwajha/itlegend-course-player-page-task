@@ -1,4 +1,4 @@
-"use clinet";
+"use client";
 
 import { CourseMaterialData } from "@/mocks/CourseMaterial";
 import { Box } from "../atoms/Box";
