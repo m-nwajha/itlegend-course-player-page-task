@@ -40,6 +40,7 @@ const CommentsSection = () => {
       ]);
       setComment("");
       setLoading(false);
+      setError(false);
     } catch (error) {
       setError(true);
       setLoading(false);
